@@ -33,7 +33,6 @@ class InstanceTags(defaultdict):
 
 def command_line():
     tags = InstanceTags()
-    print(sys.argv)
     assert len(sys.argv) == 2, "Exactly one argument required"
     name, value = sys.argv[-1].split('=')
     name = name.strip()
