@@ -1,4 +1,6 @@
 # EC2 Tag conditionals
+[![CircleCI](https://circleci.com/gh/DemocracyClub/ec2-tag-conditional/tree/master.svg?style=svg)](https://circleci.com/gh/DemocracyClub/ec2-tag-conditional/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/DemocracyClub/ec2-tag-conditional/badge.svg?branch=master)](https://coveralls.io/github/DemocracyClub/ec2-tag-conditional?branch=master)
 
 This is a python library and shell command that is designed to be run on AWS's EC2 instances.
 
