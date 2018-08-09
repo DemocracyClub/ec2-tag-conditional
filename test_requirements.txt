@@ -1,3 +1,4 @@
 pytest
 pytest-flakes
 pytest-mock
+coveralls
