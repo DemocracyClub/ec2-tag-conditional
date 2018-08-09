@@ -75,3 +75,7 @@ def test_command_line_fail(mocker, FakeEC2Instance, FakeTags):
         ec2_tag_conditional.util.command_line()
     assert excinfo.type == SystemExit
     assert excinfo.value.code == 1
+
+def test_get_keys(FakeEC2Instance, FakeTags):
+    tags = ec2_tag_conditional.util.InstanceTags()
+    assert tags['foo'] == False

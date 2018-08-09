@@ -7,6 +7,7 @@ from boto.utils import get_instance_metadata
 
 class InstanceTags(defaultdict):
     def __init__(self):
+        self.default_factory = lambda: False
         self.metadata = get_instance_metadata(timeout=0.5, num_retries=1)
         tags = self._get_tags()
         for tag in tags:
@@ -37,6 +38,6 @@ def command_line():
     name, value = sys.argv[-1].split('=')
     name = name.strip()
     value = value.strip()
-    if tags.get(name) and tags[name] == value:
+    if tags[name] and tags[name] == value:
         sys.exit(0)
     sys.exit(1)
