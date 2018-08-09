@@ -53,7 +53,7 @@ def test_running_on_ec2_is_false(mocker):
 
 
 
-def test_running_on_ec2_is_true(FakeEC2Instance):
+def test_running_on_ec2_is_true(FakeTags, FakeEC2Instance):
     tags = ec2_tag_conditional.util.InstanceTags()
     assert tags._is_on_ec2 == True
 
