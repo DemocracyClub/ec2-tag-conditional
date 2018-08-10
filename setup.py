@@ -55,6 +55,7 @@ setup(
 
     description='Tests for EC2 tags',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Sym Roe',
     author_email='sym.roe@democracyclub.org.uk',
     license='MIT',
