@@ -53,7 +53,7 @@ if tags['Env'] == 'prod':
 This code was written with the following use case in mind:
 
 You have `n` servers in a auto scaling group, launched from a custom
-AMI (goldern image). The nature of the application running on the
+AMI (golden image). The nature of the application running on the
 servers is that, for some functions to work (backup, reporting),
 a given set of tasks should only be run by one server.
 
