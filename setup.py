@@ -60,7 +60,7 @@ setup(
     author_email='sym.roe@democracyclub.org.uk',
     license='MIT',
 
-    python_requires='>=3.6',
+    python_requires='>=2.7',
     classifiers=CLASSIFIERS,
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
